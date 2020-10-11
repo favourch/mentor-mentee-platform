@@ -7,3 +7,4 @@ gemfile: server/Gemfile
 script:
   - cd server
   - bin/rails spec
+  - rubocop

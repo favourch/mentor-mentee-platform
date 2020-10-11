@@ -9,8 +9,8 @@ function App() {
             mode: 'cors',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
-	              "username": "ashley8",
-	              "email": "ashley8@email.com",
+	              "username": "ashley9",
+	              "email": "ashley9@email.com",
 	              "password": "foobar",
                 "mentor": "true",
                 "mentee": "true"
