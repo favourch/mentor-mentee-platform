@@ -5,7 +5,7 @@ cache: bundler
 gemfile: server/Gemfile
 
 before_script:
- - bundle exec rake db:create db:migrate db:seed
+  - bundle install
 
 script:
   - cd server
