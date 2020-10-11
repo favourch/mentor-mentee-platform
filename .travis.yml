@@ -4,6 +4,9 @@ language: ruby
 cache: bundler
 gemfile: server/Gemfile
 
+before_script:
+ - bundle exec rake db:create db:migrate db:seed
+
 script:
   - cd server
   - bin/rails spec
