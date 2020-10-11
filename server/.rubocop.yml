@@ -10,7 +10,7 @@ AllCops:
   Exclude:
     - 'bin/*'
     - 'config/**/*.rb'
-    - 'vendor/**/*'
+    - 'vendor/bundle/**/*'
 
 Metrics/BlockLength:
   Exclude:
