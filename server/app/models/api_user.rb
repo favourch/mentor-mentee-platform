@@ -13,7 +13,6 @@ class ApiUser < ApplicationRecord
   validates :username, uniqueness: true, on: [:create, :update]
   validate :mentor_or_mentee
 
-
   def mentor_or_mentee
     unless mentor || mentee
       errors.add(:api_user, "must either want to be a mentor or mentee or both")
