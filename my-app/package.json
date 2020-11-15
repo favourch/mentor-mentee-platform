@@ -3,10 +3,12 @@
     "version": "0.1.0",
     "private": true,
     "dependencies": {
+        "axios": "^0.20.0",
         "i": "^0.3.6",
         "prop-types": "^15.7.2",
         "react": "^16.11.0",
         "react-dom": "^16.11.0",
+        "react-router-dom": "^5.1.2",
         "react-scripts": "^3.4.3"
     },
     "scripts": {
@@ -33,9 +35,9 @@
         ]
     },
     "devDependencies": {
-        "@babel/core": "^7.7.0",
+        "@babel/core": "^7.12.3",
         "@storybook/addon-actions": "^6.0.28",
-        "@storybook/addon-knobs": "^6.0.28",
+        "@storybook/addon-knobs": "^5.3.21",
         "@storybook/addons": "^6.0.28",
         "@storybook/react": "^6.0.28",
         "husky": "^4.3.0",

@@ -1,31 +1,40 @@
 import React from "react";
-//{ useState, useEffect } from "react";
+//import React, { useState } from "react";
+import { useState, useEffect } from "react";
 import "./App.css";
+import RegistrationForm from "./containers/RegistrationForm/RegistrationForm";
+import "./index.css";
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    withRouter,
+} from "react-router-dom";
 
 function App() {
-    // useEffect(() => {
-    //     const requestOptions = {
-    //         method: "POST",
-    //         mode: "cors",
-    //         headers: { "Content-Type": "application/json" },
-    //         body: JSON.stringify({
-    //             username: "ashley8",
-    //             email: "ashley8@email.com",
-    //             password: "foobar",
-    //             mentor: "true",
-    //             mentee: "true",
-    //         }),
-    //     };
-    //     fetch("http://localhost:3000/api/v1/signup", requestOptions)
-    //         .then((response) => response.json())
-    //         .then((data) => console.log(data))
-    //         .catch((error) => console.log(error));
-    // });
+    const [title, updateTitle] = useState(null);
+    const [errorMessage, updateErrorMessage] = useState(null);
     return (
-        <div>
-            RailsGirls Mentor mentee platform, we can update on our machine in
-            October. we can make changes boo yah! Or can we though
-        </div>
+        <Router>
+            <div className="App">
+                <div className="container d-flex align-items-center flex-column">
+                    <Switch>
+                        <Route path="/" exact={true}>
+                            <RegistrationForm
+                                showError={updateErrorMessage}
+                                updateTitle={updateTitle}
+                            />
+                        </Route>
+                        <Route path="/signup">
+                            <RegistrationForm
+                                showError={updateErrorMessage}
+                                updateTitle={updateTitle}
+                            />
+                        </Route>
+                    </Switch>
+                </div>
+            </div>
+        </Router>
     );
 }
 

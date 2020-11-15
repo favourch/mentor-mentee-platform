@@ -1,4 +1,4 @@
-.signup-form {
+.SignupForm {
     background: #fff;
     border: 1.2rem solid #fd4927;
     border-radius: 1rem;
@@ -10,32 +10,32 @@
     width: 32rem;
 }
 
-.signup-form p {
+.SignupForm p {
     font-size: 1.4rem;
 }
 
-.signup-form .inputs {
+.SignupForm .inputs {
     border: 2px solid #fd4927;
     margin: 2rem 0 0;
     min-height: 6rem;
     padding: 0.5rem 0.7rem;
 }
 
-.signup-form .inputs input {
+.SignupForm .inputs input {
     margin-top: 0.3rem;
     width: 100%;
 }
 
-.signup-form .inputs:hover,
-.signup-form .inputs:focus-within {
+.SignupForm .inputs:hover,
+.SignupForm .inputs:focus-within {
     box-shadow: 1px 3px 6px 1px rgba(255, 76, 42, 0.58);
 }
 
-.signup-form .inputs label {
+.SignupForm .inputs label {
     color: #000;
     font-weight: 500;
 }
 
-.signup-form button {
+.SignupForm button {
     margin: 2rem 0 0;
 }

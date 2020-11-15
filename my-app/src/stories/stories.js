@@ -10,7 +10,7 @@ import Input from "../components/input/input.component";
 import Button from "../components/button/button.component";
 import Link from "../components/link/link.component";
 import UserCard from "../components/userCard/user-card.component";
-import SignupForm from "../components/signupForm/signup-form.component";
+import SignupForm from "../components/SignupForm/SignupForm.component";
 
 // Add the stories of your components here
 storiesOf("Avatar", module).add("avatar", () => <Avatar />);
